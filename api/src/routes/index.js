@@ -178,9 +178,9 @@ router.post("/pokemons", async function (req, res, next) {
         console.log("name: ",name);
         let idTipo = await Tipo.findOne({
             where: { name },
-            aqui te quedaste, en encontrar el id
+            //aqui te quedaste, en encontrar el id
           });
-        console.log("idTipo: ",idTipo);
+        console.log("idTipo: ",JSON.stringify(idTipo));
 
        // newPokemon.addTipo(idTipo);
       } catch (error) {
